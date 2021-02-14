@@ -181,6 +181,7 @@ function deleteDepartment(){
         if(err) throw err;
         console.log('Department ' + chosenDepart.dptname + ' is deleted from the system.')
       })
+      gettable();
     })
   })
 }
@@ -224,6 +225,7 @@ function deleteEmployee(){
         chosenEmployee.last_name + ' is sucessfully deleted from the system.')
       })
     })
+    gettable();
   })
 }
 
@@ -310,8 +312,8 @@ function updateManager(){
           // connection query to update the table.
           connection.query('UPDATE employee SET ? WHERE ?',
           [
-            {id : chosenEmployeeId,},
-            {manager_id : updatingManagerId}
+            {manager_id : updatingManagerId},
+            {id : chosenEmployeeId, }
           ],(err)=>{
             if(err) throw err;
             console.log('employee '+ answer.employee  + ' manager is updated as ' + answer.updatingManager)

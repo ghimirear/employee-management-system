@@ -18,7 +18,7 @@
  - clone the repo 
  - install dependencies 
  # Usage
- - After finishing the installation navigate through `index.js` file in external or internal terminal and run command `node index.js' 
+ - After finishing the installation navigate through `index.js` file in external or internal terminal and run command `node index.js` 
  - follow the procedure comes after
  # Deployment 
  This app is command line so it is not deployed but here is the demo video.
